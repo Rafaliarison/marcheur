@@ -1,13 +1,20 @@
 package com.projet1.marcheur;
 
+import lombok.Data;
+
+import java.util.ArrayList;
 import java.util.List;
-
+@Data
 public class Lieux {
-    String name;
-    List<Lieux> voisin;
+    private String nom;
+    private List<Lieux> voisins;
 
-    public Lieux(String name, List<Lieux> voisin) {
-        this.name = name;
-        this.voisin = voisin;
+    public Lieux(String nom) {
+        this.nom = nom;
+        this.voisins = new ArrayList<>();
     }
+    public void ajouterVoisins(Lieux lieux){
+
+    }
+
 }

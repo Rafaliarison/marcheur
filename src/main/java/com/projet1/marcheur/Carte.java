@@ -6,11 +6,12 @@ import java.util.List;
 
 @Data
 public class Carte {
-    List<Lieux> lieux;
-    String rue;
+    private List<Lieux> lieux;
 
-    public Carte(List<Lieux> voisin, String rue){
-        this.rue = rue;
+    public Carte(List<Lieux> voisin){
         this.lieux = voisin;
+    }
+    public void ajouterLieux(){
+
     }
 }
