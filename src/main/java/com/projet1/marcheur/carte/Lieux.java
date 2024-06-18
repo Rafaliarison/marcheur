@@ -1,20 +1,16 @@
-package com.projet1.marcheur;
+package com.projet1.marcheur.carte;
 
 import lombok.Data;
+import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
-@Data
+@Getter
 public class Lieux {
     private String nom;
     private List<Lieux> voisins;
-
-    public Lieux(String nom) {
+    public Lieux(String nom, List<Lieux> voisins) {
         this.nom = nom;
-        this.voisins = new ArrayList<>();
+        this.voisins = voisins;
     }
-    public void ajouterVoisins(Lieux lieux){
-
-    }
-
 }
